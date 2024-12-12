@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metro System Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="nav-logo">
+                <i class="fas fa-train"></i>
+                Optimal Route Detection
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://github.com/Asmigarg/Optimal-Route-Detection-for-Metro-Users" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository"><i class="fab fa-github"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Metro System Explorer</h2>
+            <p>Metro System Explorer is a powerful tool designed to help commuters navigate the complex metro network with ease.</p>
+            <p>Whether you're a daily commuter or a tourist exploring the city, Metro System Explorer is your go-to companion for efficient and hassle-free metro travel. Start exploring smarter routes today!</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <header>
+            <h1>Metro System Explorer</h1>
+        </header>
+        <div id="home" class="main-content">
+            <div class="form-container">
+                <div class="form-group">
+                    <label for="source">Enter Source Station:</label>
+                    <select id="source">
+                        <option value="" disabled selected>Enter Source Station</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="destination">Enter Destination Station:</label>
+                    <select id="destination">
+                        <option value="" disabled selected>Enter Destination Station</option>
+                    </select>
+                </div>
+                <button id="calculate">Find Route</button>
+            </div>
+            <div id="result" class="hidden">
+                <h2>Route Information</h2>
+                <div class="info-container">
+                    <div class="info-item">
+                        <span class="info-label">Distance:</span>
+                        <span id="distance"></span> km
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Fare:</span>
+                        ₹<span id="fare"></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Travel Time:</span>
+                        <span id="time"></span> minutes
+                    </div>
+                </div>
+                <h3>Stations on Route:</h3>
+                <div id="stations-container">
+                    <ul id="stations"></ul>
+                </div>
+            </div>
+        </div>
+        <div id="map-container" class="hidden">
+            <h3>Route Map Preview</h3>
+            <div id="map"></div>
+        </div>
+    </div>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have questions or suggestions? We'd love to hear from you!</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email: info@metroexplorer.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>Phone: +91 123-456-7890</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Address: 123 Metro Street, City Center, Delhi, India</span>
+                </div>
+            </div>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/3.1.1/svg.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
