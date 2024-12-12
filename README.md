@@ -61,20 +61,8 @@
 
 ---
 
-## Project Structure
-
-```
-optimal-route-detection/
-├── src/
-│   ├── Main.java
-│   ├── Graph.java
-│   ├── Dijkstra.java
-│   └── Station.java
-├── bin/
-│   └── [compiled bytecode files]
-├── README.md
-└── LICENSE
-```
+## Project Initial Frontend
+Link= https://optimalroutedetectionformetrousers.netlify.app/
 
 ---
 
@@ -104,11 +92,6 @@ We welcome contributions to improve this project. Please follow these steps:
 
 ---
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
 
 ## Acknowledgments
 
