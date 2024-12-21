@@ -104,5 +104,5 @@ We welcome contributions to improve this project. Please follow these steps:
 
 For any inquiries or feedback, feel free to reach out:
 
-- **Email:** your.email@example.com
-- **GitHub:** [yourusername](https://github.com/yourusername)
+- **Email:** asmigarg569@gmail.com
+- **GitHub:** [Asmigarg](https://github.com/Asmigarg)
